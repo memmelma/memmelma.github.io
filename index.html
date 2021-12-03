@@ -89,11 +89,11 @@
             </td>
           </tr> 
   
-          <tr onmouseout="dimred_stop()" onmouseover="dimred_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+          <!-- <tr onmouseout="dimred_stop()" onmouseover="dimred_start()">
+            <td style="padding:20px ;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='dimred_image'><img src='images/ball_rolling.gif'></div>
-                <!-- <img src='images/jump_still.jpg'> -->
+                <img src='images/ball_rolling.jpg'>
               </div>
               <script type="text/javascript">
                 function dimred_start() {
@@ -105,8 +105,26 @@
                 }
                 dimred_stop()
               </script>
+            </td> -->
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='ball_roll' class='hidden'><img src="images/ball_rolling.gif"></div>
+              <div id='ball_stop'>
+                <a href="images/ball_rolling.gif"><img src="images/ball_rolling.jpg"></a>
+              </div>
+              <script type="text/javascript">
+                function defocus_start() {
+                  document.getElementById('ball_roll').style.display = 'inline';
+                  document.getElementById('ball_stop').style.display = 'none';
+                }
+
+                function defocus_stop() {
+                  document.getElementById('ball_roll').style.display = 'none';
+                  document.getElementById('ball_stop').style.display = 'inline';
+                }
+                defocus_stop()
+              </script>
             </td>
-  
+            
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://github.com/memmelma/memmelma.github.io/raw/master/files/rl_dim_red_paper.pdf">
                 <papertitle>Dimensionality Reduction and Prioritized Exploration for Policy Search</papertitle>
