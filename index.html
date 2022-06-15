@@ -31,15 +31,18 @@
                   <p style="text-align:center">
                     <name>Marius Memmel</name>
                   </p>
-                  <p>I'm <b>currently on an exchange at <a href='https://www.epfl.ch/en/'>EPFL</a></b>, where I write my thesis
-                    at <a href='https://vilab.epfl.ch/'>VILAB</a> supervised by <a
+                  <p> 
+                    I will <b>start my PhD in Fall 2022 at the <a href="https://www.washington.edu/">University of Washington</a></b> supervised by <a href="https://homes.cs.washington.edu/~fox/">Prof. Dieter Fox</a> and <a href="https://abhishekunique.github.io/">Prof. Abhishek Gupta</a>.
+                    Until then, I'm a <b>Master's student in Computer Science</b> at <a href="https://www.tu-darmstadt.de/index.en.jsp">TU
+                    Darmstadt</a>, focusing on computer vision and robot learning.
+                    
+                    </p>
+                    <p>
+                    I was on an exchange at <a href='https://www.epfl.ch/en/'>EPFL</a>, where I wrote my thesis
+                      at <a href='https://vilab.epfl.ch/'>VILAB</a> supervised by <a
                       href='https://vilab.epfl.ch/zamir/'>Prof. Amir Zamir</a> (and formally <a
                       href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan
                       Roth</a>).
-                    </p>
-                    <p>
-                    Additionally, I'm a <b>Master's student in Computer Science</b> at <a href="https://www.tu-darmstadt.de/index.en.jsp">TU
-                      Darmstadt</a>, focusing on computer vision and robot learning.
                     I was a student research assistant at the <a
                       href="https://ml-research.github.io/">AI&ML Lab</a> of <a
                       href="https://ml-research.github.io/people/kkersting/">Prof. Kristian Kersting</a> (2020-2021) and <a
@@ -113,25 +116,82 @@
         </table>
 
           <!-- Research Projects -->
+
+          <!-- Other Projects Header -->
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Research</heading>
+                  <p>
+                    Peer reviewed conference and workshop papers. 
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+
+              <tr onmouseout="embodied_nav_stop()" onmouseover="embodied_nav_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="width:auto; height:auto; max-width:100%;">
+                    <div class="two" id='embodied_nav_image'>
+                      <img src='images/embodied_nav.gif' width="160", height="160">
+                    </div>
+                    <img src='images/vot.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function embodied_nav_start() {
+                      document.getElementById('embodied_nav_image').style.opacity = "1";
+                    }
+
+                    function embodied_nav_stop() {
+                      document.getElementById('embodied_nav_image').style.opacity = "0";
+                    }
+                    embodied_nav_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="files/embodied_2022.pdf">
+                    <papertitle>Modality-invariant Visual Odometry for Indoor Navigation</papertitle>
+                  </a>
+                  <br>
+                  <strong>Marius Memmel</strong>,
+                  <a href="https://vilab.epfl.ch/zamir/">Amir Zamir</a>
+                  <br>
+                  <em>Embodied AI Workshop at Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022
+                  <br>
+                  <p></p>
+                  <p>
+                    <a href='files/embodied_2022.pdf'>paper &nbsp;&nbsp</a>
+                    <!-- <a href='https://arxiv.org/abs/2107.08751'>arxiv &nbsp;&nbsp</a> -->
+                    <a href='files/embodied_2022_poster.pdf'>poster &nbsp;&nbsp</a>
+                    <a href='https://github.com/memmelma/VO-Transformer/tree/workshop'>code &nbsp;&nbsp</a>
+                  </p>
+                </td>
+              </tr>
+
               <tr onmouseout="interdis_stop()" onmouseover="interdis_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='interdis__image'>
+                    <div class="two" id='interdis_image'>
                       <img src='images/inter_dis_2.jpg' width="160">
                     </div>
                     <img src='images/inter_dis_1.jpg' width="160">
                   </div>
                   <script type="text/javascript">
                     function interdis_start() {
-                      document.getElementById('interdis__image').style.opacity = "1";
+                      document.getElementById('interdis_image').style.opacity = "1";
                     }
 
                     function interdis_stop() {
-                      document.getElementById('interdis__image').style.opacity = "0";
+                      document.getElementById('interdis_image').style.opacity = "0";
                     }
                     interdis_stop()
                   </script>
@@ -241,49 +301,6 @@
                   <a href='video/memmel_paper_13_video.mp4'>video &nbsp;&nbsp</a>
                 </td>
               </tr>
-
-              <tr onmouseout="gun_stop()" onmouseover="gun_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='gun_image'>
-                      <img src='images/gun_seg_after.jpg' width="160">
-                    </div>
-                    <img src='images/gun_seg_before.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function gun_start() {
-                      document.getElementById('gun_image').style.opacity = "1";
-                    }
-
-                    function gun_stop() {
-                      document.getElementById('gun_image').style.opacity = "0";
-                    }
-                    gun_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2112.03917">
-                    <papertitle>Scalable 3D Semantic Segmentation for Gun Detection in CT Scans</papertitle>
-                  </a>
-                  <br>
-                  <strong>Marius Memmel*</strong>,
-                  <a href="https://christophreich1996.github.io/">Christoph Reich*</a>,
-                  <a href="https://www.semanticscholar.org/author/Nicolas-Wagner/2062674231">Nicolas Wagner*</a>,
-                  <a href="https://scholar.google.com/citations?user=6ZcToqgAAAAJ&hl=en">Faraz Saeedan</a>
-                  <br>
-                  <em>Visual Inference Lab, TU Darmstadt</em>, 2021
-                  <br>
-                  <p>Group project for <i>Deep Learning for Computer Vision</i> supervised by <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth</a>.</p>
-                  <p>
-                    <a href='https://arxiv.org/abs/2112.03917'>arxiv
-                      &nbsp;&nbsp</a>
-                    <!-- <a href='https://link.springer.com/chapter/10.1007/978-3-030-87722-4_4'>paper  </a> -->
-                    <!-- <a href='https://arxiv.org/abs/2107.08751'>arxiv  </a> -->
-                    <a href='https://github.com/memmelma/3D_baggage_segmentation'>code &nbsp;&nbsp</a>
-                  </p>
-                </td>
-              </tr>
             </tbody>
           </table>
 
@@ -295,7 +312,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Other Projects</heading>
                   <p>
-                    Personal and projects, open-source contributions, and miscellaneous. For my past data science and software engineering projects please refer to my <a href="https://github.com/memmelma">GitHub</a>. 
+                    Thesis, projects, open-source contributions, and miscellaneous. For my past data science and software engineering projects please refer to my <a href="https://github.com/memmelma">GitHub</a>. 
                   </p>
                 </td>
               </tr>
@@ -306,6 +323,41 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              
+              <tr onmouseout="multim_stop()" onmouseover="multim_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="width:auto; height:auto; max-width:100%;">
+                    <div class="two" id='multim_image'>
+                      <img src='images/multim_after.jpg' width="160">
+                    </div>
+                    <img src='images/multim_before.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function multim_start() {
+                      document.getElementById('multim_image').style.opacity = "1";
+                    }
+
+                    function multim_stop() {
+                      document.getElementById('multim_image').style.opacity = "0";
+                    }
+                    multim_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://github.com/memmelma/VO-Transformer/raw/thesis/thesis.pdf">
+                    <papertitle>Multi-modal Vision Transformers For Data-Efficient Visual Odometry In Embodied Indoor Navigation</papertitle>
+                  </a>
+                  <br>
+                  <em>Master Thesis, Technical University of Darmstadt</em>, 2022
+                  <br>
+                  <p>Thesis at <a href="https://vilab.epfl.ch/">VILAB</a> (<a href="https://www.epfl.ch/en/">EPFL</a>) supervised by <a href="https://vilab.epfl.ch/zamir/">Prof. Amir Zamir</a> and <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth</a>.</p>
+                  <a href='https://github.com/memmelma/VO-Transformer/raw/thesis/thesis.pdf'>thesis
+                    &nbsp;&nbsp</a>
+                    <a href='https://github.com/memmelma/VO-Transformer/tree/thesis'>code
+                      &nbsp;&nbsp</a>
+                </td>
+              </tr>
 
               <tr onmouseout="mushroom_stop()" onmouseover="mushroom_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -483,13 +535,56 @@
                   <!-- <a href='https://github.com/MECLabTUDA/ACS'>code &nbsp;&nbsp</a> -->
                 </td>
               </tr>
+              
+              <tr onmouseout="gun_stop()" onmouseover="gun_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="width:auto; height:auto; max-width:100%;">
+                    <div class="two" id='gun_image'>
+                      <img src='images/gun_seg_after.jpg' width="160">
+                    </div>
+                    <img src='images/gun_seg_before.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function gun_start() {
+                      document.getElementById('gun_image').style.opacity = "1";
+                    }
+
+                    function gun_stop() {
+                      document.getElementById('gun_image').style.opacity = "0";
+                    }
+                    gun_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2112.03917">
+                    <papertitle>Scalable 3D Semantic Segmentation for Gun Detection in CT Scans</papertitle>
+                  </a>
+                  <br>
+                  <strong>Marius Memmel*</strong>,
+                  <a href="https://christophreich1996.github.io/">Christoph Reich*</a>,
+                  <a href="https://www.semanticscholar.org/author/Nicolas-Wagner/2062674231">Nicolas Wagner*</a>,
+                  <a href="https://scholar.google.com/citations?user=6ZcToqgAAAAJ&hl=en">Faraz Saeedan</a>
+                  <br>
+                  <em>Visual Inference Lab, TU Darmstadt</em>, 2021
+                  <br>
+                  <p>Group project for <i>Deep Learning for Computer Vision</i> supervised by <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth</a>.</p>
+                  <p>
+                    <a href='https://arxiv.org/abs/2112.03917'>arxiv
+                      &nbsp;&nbsp</a>
+                    <!-- <a href='https://link.springer.com/chapter/10.1007/978-3-030-87722-4_4'>paper  </a> -->
+                    <!-- <a href='https://arxiv.org/abs/2107.08751'>arxiv  </a> -->
+                    <a href='https://github.com/memmelma/3D_baggage_segmentation'>code &nbsp;&nbsp</a>
+                  </p>
+                </td>
+              </tr>
 
               <tr onmouseout="knauf_stop()" onmouseover="knauf_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
                     <div class="two" id='knauf_image'>
                       <!-- <img src='images/knauf_after.jpg' width="160"> -->
-                      <img src='images/knauf_before.jpg' width="160">
+                      <img src='images/knauf_after.jpg' width="160">
                     </div>
                     <img src='images/knauf_before.jpg' width="160">
                   </div>
