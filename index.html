@@ -14,15 +14,15 @@
   <!-- <link rel="icon" href="images/favicon.ico"> -->
   <link rel="icon" type="image/png" href="images/profile_picture_round.png">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5KCQTYX67P"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-  
-      gtag('config', 'G-5KCQTYX67P');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5KCQTYX67P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5KCQTYX67P');
+  </script>
 
 </head>
 
@@ -132,7 +132,12 @@
               <td style="padding:2.5%;width:100%;vertical-align:middle">
                 <heading>News</heading>
                 <ul>
-                  <li>07/2024: Starting my internship at <b>Bosch AI</b> in Pittsburgh</li>
+                  <li>06/2024: Starting my internship at <b>Bosch AI</b> in Pittsburgh</li>
+                  <li>05/2024: <i>URDFormer: A Pipeline for Constructing Articulated Simulation Environments from
+                      Real-World Images</i> has been accepted to <b>RSS 2024</b></li>
+                  <li>05/2024: <i>DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset</i> has been accepted to
+                    <b>RSS 2024</b></li>
+                  <li>05/2024: Invited to review for CoRL 2024</li>
                   <li>03/2024: Invited to review for SemRob @ RSS 2024</li>
                   <li>03/2024: Invited to review for RSS 2024</li>
                   <li>02/2024: Invited to review for CVPR 2024</li>
@@ -140,7 +145,8 @@
                   <li>01/2024: <i>"ASID: Active Exploration for System Identification in Robotic Manipulation"</i> has
                     been accepted to <b>ICLR 2024 (oral, top 1.2%)</b>.</li>
                   <li>05/2023: <i>"Modality-invariant Visual Odometry for Embodied Vision"</i> has been accepted to
-                    <b>CVPR 2023</b>.</li>
+                    <b>CVPR 2023</b>.
+                  </li>
                   <!-- <li>06/2022: Our paper <i>"Modality-invariant Visual Odometry for Indoor Navigation"</i> has been accepted to the <b>Embodied AI Workshop</b> at <b>CVPR 2022</b>.</li> -->
                   <li>03/2022: <i>"Interactive Disentanglement: Learning Concepts by Interacting with their Prototype
                       Representations"</i> has been accepted to <b>CVPR 2022</b>.</li>
@@ -170,6 +176,55 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <!-- URDFORMER -->
+              <tr onmouseout="urdf_stop()" onmouseover="urdf_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="width:auto; height:auto; max-width:100%;">
+                    <div class="two" id='urdf_image'>
+                      <img src='images/urdformer_after.gif' width="160" , height="160">
+                    </div>
+                    <img src='images/urdformer_before.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function urdf_start() {
+                      document.getElementById('urdf_image').style.opacity = "1";
+                    }
+
+                    function urdf_stop() {
+                      document.getElementById('urdf_image').style.opacity = "0";
+                    }
+                    urdf_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://openreview.net/pdf?id=I9fQcOrHv9">
+                    <papertitle>
+                      URDFormer: A Pipeline for Constructing Articulated Simulation Environments from Real-World Images
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://qiuyuchen14.github.io/">Zoey Chen</a>,
+                  <a href="https://aaronwalsman.com/">Aaron Walsman</a>,
+                  <strong>Marius Memmel</strong>,
+                  <a href="https://kaichun-mo.github.io/">Kaichun Mo</a>,
+                  <a href="https://scholar.google.com/citations?user=kD9uKC4AAAAJ&hl=en">Alex Fang</a>,
+                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox*</a>,
+                  <a href="https://abhishekunique.github.io/">Abhishek Gupta*</a>
+                  <br>
+                  <em>Robotics: Science and Systems (RSS)</em>, 2024
+                  <br>
+                  <p></p>
+                  <p>
+                    <a href='https://openreview.net/pdf?id=I9fQcOrHv9'>paper &nbsp;&nbsp</a>
+                    <!-- <a href='TBD'>arxiv &nbsp;&nbsp</a> -->
+                    <a href='https://urdformer.github.io/'>website &nbsp;&nbsp</a>
+                    <a href='https://github.com/WEIRDLabUW/urdformer'>code &nbsp;&nbsp</a>
+                  </p>
+                </td>
+              </tr>
+
 
               <!-- DROID -->
               <tr onmouseout="droid_stop()" onmouseover="droid_start()">
@@ -207,7 +262,7 @@
                   <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
                   <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
                   <br>
-                  <em>arXiv Preprint</em>, 2024
+                  <em>Robotics: Science and Systems (RSS)</em>, 2024
                   <br>
                   <p></p>
                   <p>
@@ -258,53 +313,6 @@
                     <a href='https://openreview.net/pdf?id=jNR6s6OSBT'>paper &nbsp;&nbsp</a>
                     <a href='http://arxiv.org/abs/2404.12308'>arxiv &nbsp;&nbsp</a>
                     <a href='https://weirdlabuw.github.io/asid/'>website &nbsp;&nbsp</a>
-                  </p>
-                </td>
-              </tr>
-
-              <!-- URDFORMER -->
-              <tr onmouseout="urdf_stop()" onmouseover="urdf_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='urdf_image'>
-                      <img src='images/urdformer_after.gif' width="160" , height="160">
-                    </div>
-                    <img src='images/urdformer_before.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function urdf_start() {
-                      document.getElementById('urdf_image').style.opacity = "1";
-                    }
-
-                    function urdf_stop() {
-                      document.getElementById('urdf_image').style.opacity = "0";
-                    }
-                    urdf_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2305.00348">
-                    <papertitle>
-                      URDFormer: A Pipeline for Constructing Articulated Simulation Environments from Real-World Images
-                    </papertitle>
-                  </a>
-                  <br>
-                  <a href="https://qiuyuchen14.github.io/">Zoey Chen</a>,
-                  <a href="https://aaronwalsman.com/">Aaron Walsman</a>,
-                  <strong>Marius Memmel</strong>,
-                  <a href="https://kaichun-mo.github.io/">Kaichun Mo</a>,
-                  <a href="https://scholar.google.com/citations?user=kD9uKC4AAAAJ&hl=en">Alex Fang</a>,
-                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox*</a>,
-                  <a href="https://abhishekunique.github.io/">Abhishek Gupta*</a>
-                  <br>
-                  <em>Preprint</em>, 2024 <span style="color:red">(Oral Presentation at CoRL TGR workshop)</span>
-                  <br>
-                  <p></p>
-                  <p>
-                    <a href='https://openreview.net/pdf?id=I9fQcOrHv9'>paper &nbsp;&nbsp</a>
-                    <!-- <a href='TBD'>arxiv &nbsp;&nbsp</a> -->
-                    <a href='https://sites.google.com/view/urdformer/home'>website &nbsp;&nbsp</a>
                   </p>
                 </td>
               </tr>
@@ -487,345 +495,7 @@
             </tbody>
           </table>
 
-          <!-- Other Projects Header -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Other Projects</heading>
-                  <p>
-                    Thesis, projects, open-source contributions, and miscellaneous. For my past data science and
-                    software engineering projects please refer to my <a href="https://github.com/memmelma">GitHub</a>.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- Other Projects -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-              <tr onmouseout="multim_stop()" onmouseover="multim_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='multim_image'>
-                      <img src='images/multim_after.jpg' width="160">
-                    </div>
-                    <img src='images/multim_before.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function multim_start() {
-                      document.getElementById('multim_image').style.opacity = "1";
-                    }
-
-                    function multim_stop() {
-                      document.getElementById('multim_image').style.opacity = "0";
-                    }
-                    multim_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://github.com/memmelma/VO-Transformer/raw/thesis/thesis.pdf">
-                    <papertitle>Multi-modal Vision Transformers For Data-Efficient Visual Odometry In Embodied Indoor
-                      Navigation</papertitle>
-                  </a>
-                  <br>
-                  <em>Master Thesis, Technical University of Darmstadt</em>, 2022
-                  <br>
-                  <p>Thesis at <a href="https://vilab.epfl.ch/">VILAB</a> (<a href="https://www.epfl.ch/en/">EPFL</a>)
-                    supervised by <a href="https://vilab.epfl.ch/zamir/">Prof. Amir Zamir</a> and <a
-                      href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof.
-                      Stefan Roth</a>.</p>
-                  <a href='https://github.com/memmelma/VO-Transformer/raw/thesis/thesis.pdf'>thesis
-                    &nbsp;&nbsp</a>
-                  <a href='https://github.com/memmelma/VO-Transformer/tree/thesis'>code
-                    &nbsp;&nbsp</a>
-                </td>
-              </tr>
-
-              <tr onmouseout="mushroom_stop()" onmouseover="mushroom_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='mushroom_image'>
-                      <img src='images/mushroom_rl_after_new.gif' width="160">
-                      <!-- <img src='images/mushroom_rl_after_new.gif' width="160"> -->
-                    </div>
-                    <img src='images/mushroom_rl_before_new.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function mushroom_start() {
-                      document.getElementById('mushroom_image').style.opacity = "1";
-                    }
-
-                    function mushroom_stop() {
-                      document.getElementById('mushroom_image').style.opacity = "0";
-                    }
-                    mushroom_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://github.com/MushroomRL/mushroom-rl">
-                    <papertitle>Open Source Contribution to MushroomRL</papertitle>
-                  </a>
-                  <br>
-                  <em>Intelligent Autonomous Systems Group, TU Darmstadt</em>, 2021
-                  <br>
-                  <p>Implementation of <a href="https://arxiv.org/abs/2010.13483">Constrained Weighted Maximum
-                      Likelihood Update for REPS</a> (CREPS) and <a
-                      href="https://papers.nips.cc/paper/2015/hash/36ac8e558ac7690b6f44e2cb5ef93322-Abstract.html">Model-based
-                      Relative Entropy Policy Search</a> (MORE).</p>
-                  <a href='https://github.com/MushroomRL/mushroom-rl'>code &nbsp;&nbsp</a>
-                  <!-- <a href='https://link.springer.com/chapter/10.1007/978-3-030-87722-4_4'>paper &nbsp;&nbsp</a> -->
-                  <!-- <a href='https://arxiv.org/abs/2107.08751'>arxiv &nbsp;&nbsp</a> -->
-                  <!-- <a href='https://github.com/MECLabTUDA/ACS'>code &nbsp;&nbsp</a> -->
-                </td>
-              </tr>
-
-              <tr onmouseout="df_stop()" onmouseover="df_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='df_image'>
-                      <img src='images/deep_fovea.jpg' width="160">
-                    </div>
-                    <img src='images/deep_fovea.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function df_start() {
-                      document.getElementById('df_image').style.opacity = "1";
-                    }
-
-                    function df_stop() {
-                      document.getElementById('df_image').style.opacity = "0";
-                    }
-                    df_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="files/aiml_2020.pdf">
-                    <papertitle>DeepFovea++: Reconstruction and Super-Resolution for Natural Foveated Rendered Videos
-                    </papertitle>
-                  </a>
-                  <br>
-                  <em>Artificial Intelligence & Machine Learning Lab, TU Darmstadt</em>, 2020
-                  <br>
-                  <p>Group project for the <em>Deep Learning Architectures and Methods</em> course supervised by <a
-                      href="https://ml-research.github.io/people/kkersting/">Prof. Kristian Kersting</a>.</p>
-                  <a href='files/aiml_2020.pdf'>report &nbsp;&nbsp</a>
-                  <a
-                    href='https://github.com/ChristophReich1996/DeepFoveaPP_for_Video_Reconstruction_and_Super_Resolution'>code
-                    &nbsp;&nbsp</a>
-                </td>
-              </tr>
-
-              <tr onmouseout="car_stop()" onmouseover="car_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='car_image'>
-                      <!-- <img src='images/car_proto_small.gif' width="160"> -->
-                      <img src='images/car_proto_before.jpg' width="160">
-                    </div>
-                    <img src='images/car_proto_before.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function car_start() {
-                      document.getElementById('car_image').style.opacity = "1";
-                    }
-
-                    function car_stop() {
-                      document.getElementById('car_image').style.opacity = "0";
-                    }
-                    car_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://github.com/memmelma/PrototypeDL-pytorch">
-                    <papertitle>Deep Learning for Case-based Reasoning through Prototypes: A Neural Network that
-                      Explains Its Predictions PYTORCH IMPLEMENTATION</papertitle>
-                  </a>
-                  <br>
-                  <em>Artificial Intelligence and Machine Learning Lab, TU Darmstadt</em>, 2020
-                  <br>
-                  <a href='https://github.com/memmelma/PrototypeDL-pytorch'>code
-                    &nbsp;&nbsp</a>
-                  <!-- <a href='https://link.springer.com/chapter/10.1007/978-3-030-87722-4_4'>paper  </a> -->
-                  <!-- <a href='https://arxiv.org/abs/2107.08751'>arxiv  </a> -->
-                  <!-- <a href='https://github.com/MECLabTUDA/ACS'>code  </a> -->
-                </td>
-              </tr>
-
-              <tr onmouseout="emoji_stop()" onmouseover="emoji_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='emoji_image'>
-                      <img src='images/emoji_gan.jpg' width="160">
-                    </div>
-                    <img src='images/tille.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function emoji_start() {
-                      document.getElementById('emoji_image').style.opacity = "1";
-                    }
-
-                    function emoji_stop() {
-                      document.getElementById('emoji_image').style.opacity = "0";
-                    }
-                    emoji_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://github.com/nwWag/EmojiGAN/tree/memmelma">
-                    <papertitle>EmojiGAN: Image to Emoji Translation Using GANs</papertitle>
-                  </a>
-                  <br>
-                  <em>Medical & Environmental Computing, TU Darmstadt</em>, 2020
-                  <br>
-                  <p>Group project for the <em>Deep Generative Models</em> course supervised by <a
-                      href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_60224.de.jsp">Dr.
-                      Anirban Mukhopadhyay</a>. Special thanks to <a href="https://github.com/TillmannRheude">Tillmann
-                      Rheude</a> (image).</p>
-                  <a href='https://github.com/nwWag/EmojiGAN/tree/memmelma'>code
-                    &nbsp;&nbsp</a>
-                  <!-- <a href='https://link.springer.com/chapter/10.1007/978-3-030-87722-4_4'>paper &nbsp;&nbsp</a> -->
-                  <!-- <a href='https://arxiv.org/abs/2107.08751'>arxiv &nbsp;&nbsp</a> -->
-                  <!-- <a href='https://github.com/MECLabTUDA/ACS'>code &nbsp;&nbsp</a> -->
-                </td>
-              </tr>
-
-              <tr onmouseout="xray_stop()" onmouseover="xray_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='xray_image'>
-                      <img src='images/chest_x_ray_after.jpg' width="160">
-                    </div>
-                    <img src='images/chest_x_ray_before.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function xray_start() {
-                      document.getElementById('xray_image').style.opacity = "1";
-                    }
-
-                    function xray_stop() {
-                      document.getElementById('xray_image').style.opacity = "0";
-                    }
-                    xray_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="files/poster_dlmi_2019.pdf">
-                    <papertitle>Creative Chest X-Ray Augmentation Using Cycle GAN</papertitle>
-                  </a>
-                  <br>
-                  <em>Medical & Environmental Computing, TU Darmstadt</em>, 2019
-                  <br>
-                  <p>Group project for the <em>Deep Learning for Medical Imaging</em> course supervised by <a
-                      href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_60224.de.jsp">Dr.
-                      Anirban Mukhopadhyay</a>.</p>
-                  <a href='files/poster_dlmi_2019.pdf'>poster
-                    &nbsp;&nbsp</a>
-                  <!-- <a href='https://link.springer.com/chapter/10.1007/978-3-030-87722-4_4'>paper &nbsp;&nbsp</a> -->
-                  <!-- <a href='https://arxiv.org/abs/2107.08751'>arxiv &nbsp;&nbsp</a> -->
-                  <!-- <a href='https://github.com/MECLabTUDA/ACS'>code &nbsp;&nbsp</a> -->
-                </td>
-              </tr>
-
-              <tr onmouseout="gun_stop()" onmouseover="gun_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='gun_image'>
-                      <img src='images/gun_seg_after.jpg' width="160">
-                    </div>
-                    <img src='images/gun_seg_before.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function gun_start() {
-                      document.getElementById('gun_image').style.opacity = "1";
-                    }
-
-                    function gun_stop() {
-                      document.getElementById('gun_image').style.opacity = "0";
-                    }
-                    gun_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2112.03917">
-                    <papertitle>Scalable 3D Semantic Segmentation for Gun Detection in CT Scans</papertitle>
-                  </a>
-                  <br>
-                  <strong>Marius Memmel*</strong>,
-                  <a href="https://christophreich1996.github.io/">Christoph Reich*</a>,
-                  <a href="https://www.semanticscholar.org/author/Nicolas-Wagner/2062674231">Nicolas Wagner*</a>,
-                  <a href="https://scholar.google.com/citations?user=6ZcToqgAAAAJ&hl=en">Faraz Saeedan</a>
-                  <br>
-                  <em>Visual Inference Lab, TU Darmstadt</em>, 2021
-                  <br>
-                  <p>Group project for <i>Deep Learning for Computer Vision</i> supervised by <a
-                      href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof.
-                      Stefan Roth</a>.</p>
-                  <p>
-                    <a href='https://arxiv.org/abs/2112.03917'>arxiv
-                      &nbsp;&nbsp</a>
-                    <!-- <a href='https://link.springer.com/chapter/10.1007/978-3-030-87722-4_4'>paper  </a> -->
-                    <!-- <a href='https://arxiv.org/abs/2107.08751'>arxiv  </a> -->
-                    <a href='https://github.com/memmelma/3D_baggage_segmentation'>code &nbsp;&nbsp</a>
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="knauf_stop()" onmouseover="knauf_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='knauf_image'>
-                      <!-- <img src='images/knauf_after.jpg' width="160"> -->
-                      <img src='images/knauf_after.jpg' width="160">
-                    </div>
-                    <img src='images/knauf_before.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function knauf_start() {
-                      document.getElementById('knauf_image').style.opacity = "1";
-                    }
-
-                    function knauf_stop() {
-                      document.getElementById('knauf_image').style.opacity = "0";
-                    }
-                    knauf_stop()
-                  </script>
-                </td>
-
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="files/ba_2019.pdf">
-                    <papertitle>Conception and Development of a Machine Learning Model for the Analysis of the Energy
-                      Consumption of a Plasterboard Dryer</papertitle>
-                  </a>
-                  <br>
-                  <em>Bachelor Thesis, DHBW</em>, 2019
-                  <br>
-                  <p>Thesis at <a href="https://www.linkedin.com/company/knauf-it/">Knauf IT</a> supervised by <a
-                      href="https://www.in.tum.de/social/team/halgurtbapierre/">Dr. Halgurt Bapierre</a> and <a
-                      href="https://www.wing.hs-mannheim.de/fakultaet/personen/professoren/reichwald.html">Prof. Julian
-                      Reichwald</a>.</p>
-                  <a href='files/ba_2019.pdf'>thesis
-                    &nbsp;&nbsp</a>
-                  <!-- <a href='https://link.springer.com/chapter/10.1007/978-3-030-87722-4_4'>paper &nbsp;&nbsp</a> -->
-                  <!-- <a href='https://arxiv.org/abs/2107.08751'>arxiv &nbsp;&nbsp</a> -->
-                  <!-- <a href='https://github.com/MECLabTUDA/ACS'>code &nbsp;&nbsp</a> -->
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
+     
           <!-- Awards -->
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
