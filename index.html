@@ -51,6 +51,9 @@
                       href="https://weirdlab.cs.washington.edu/">WEIRD lab</a>).
 
                   </p>
+                  <p>
+                    In 2024, I interned at <b>Bosch USA</b>, Pittsburgh working with <a href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis</a> and <a href="https://scholar.google.com/citations?user=LYt_2MgAAAAJ&hl=en">Bingqing Chen</a>.
+                  </p>
                   <p>In 2022, I graduated with a <b>Master's in Computer Science</b> from <a
                       href="https://www.tu-darmstadt.de/index.en.jsp">TU
                       Darmstadt</a>, focusing on computer vision and robot learning, and minoring in Entrepreneurship &
@@ -168,7 +171,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
                   <p>
-                    Peer reviewed conference and workshop papers.
+                    Conference papers, workshop papers, and pre-prints.
                   </p>
                 </td>
               </tr>
@@ -178,15 +181,62 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              
+              <!-- STRAP -->
+              <tr onmouseout="strap_stop()" onmouseover="strap_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="width:auto; height:auto; max-width:100%;">
+                    <!-- <div class="two" id='strap_image'>
+                      <img src='images/strap_logo.png' width="160" , height="160">
+                    </div> -->
+                    <img src='images/strap_logo.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function strap_start() {
+                      document.getElementById('strap_image').style.opacity = "1";
+                    }
+
+                    function strap_stop() {
+                      document.getElementById('strap_image').style.opacity = "0";
+                    }
+                    strap_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://memmelma.github.io/">
+                    <papertitle>
+                      STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning
+                    </papertitle>
+                  </a>
+                  <br>
+                  <strong>Marius Memmel*</strong>,
+                  <a href="https://www.linkedin.com/in/jacob-b-066234203/">Jacob Berg</a>*,
+                  <a href="https://scholar.google.com/citations?user=LYt_2MgAAAAJ&hl=en">Bingqing Chen</a>,
+                  <a href="https://abhishekunique.github.io/">Abhishek Gupta</a>&dagger;,
+                  <a href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis</a>&dagger;
+                  <br>
+                  <em>pre-print</em>
+                  <!-- <em>Robotics: Science and Systems (RSS)</em>, 2024 -->
+                  <br>
+                  <p></p>
+                  <p>
+                    <a href='files/strap_2025.pdf'>paper &nbsp;&nbsp</a>
+                    <!-- <a href='TBD'>arxiv &nbsp;&nbsp</a> -->
+                    <!-- <a href='https://urdformer.github.io/'>website &nbsp;&nbsp</a>
+                    <a href='https://github.com/WEIRDLabUW/urdformer'>code &nbsp;&nbsp</a> -->
+                  </p>
+                </td>
+              </tr>
 
               <!-- URDFORMER -->
               <tr onmouseout="urdf_stop()" onmouseover="urdf_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
                     <div class="two" id='urdf_image'>
-                      <img src='images/urdformer_after.gif' width="160" , height="160">
+                      <img src='images/rss_urdformer.gif' width="160">
                     </div>
-                    <img src='images/urdformer_before.jpg' width="160">
+                    <img src='images/urdformer_before.png' width="160">
                   </div>
                   <script type="text/javascript">
                     function urdf_start() {
@@ -235,7 +285,7 @@
                     <div class="two" id='droid_image'>
                       <img src='images/droid_after.gif' width="160" , height="160">
                     </div>
-                    <img src='images/droid_before.jpg' width="160">
+                    <img src='images/droid_before.png' width="160">
                   </div>
                   <script type="text/javascript">
                     function droid_start() {
