@@ -24,6 +24,18 @@
     gtag('config', 'G-5KCQTYX67P');
   </script>
 
+  <script>
+    function gif_start(image, gif) {
+      document.getElementById(image).style.opacity = "1";
+      document.getElementById(gif).style.opacity = "0";
+    }
+    function gif_stop(image, gif) {
+      document.getElementById(image).style.opacity = "0";
+      document.getElementById(gif).style.opacity = "1";
+    }
+  </script>
+
+
 </head>
 
 <body>
@@ -184,7 +196,57 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              
+
+              <!-- STRAP -->
+              <tr onmouseout="peek_stop()" onmouseover="peek_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="width:auto; height:auto; max-width:100%;">
+                    <!-- <div class="two" id='strap_image'>
+                      <img src='images/strap_logo.png' width="160" , height="160">
+                    </div> -->
+                    <img src='images/peek_after.gif' width="160">
+                  </div>
+                  <img src='images/peek_before.png' width="160">
+                  <script type="text/javascript">
+                    function peek_start() {
+                      document.getElementById('peek_image').style.opacity = "1";
+                    }
+
+                    function peek_stop() {
+                      document.getElementById('peek_image').style.opacity = "0";
+                    }
+                    peek_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://peek-robot.github.io/">
+                    <papertitle>
+                      PEEK: Guiding and Minimal Image Representations for Zero-Shot Generalization of Robot Manipulation Policies
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://www.jessezhang.net/">Jesse Zhang</a>*, 
+                  <strong><u>Marius Memmel</u></strong>*, 
+                  <a href="https://minjunkevink.github.io/">Kevin Kim</a>, 
+                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>, 
+                  <a href="https://jessethomason.com/">Jesse Thomason</a>, 
+                  <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a>, 
+                  <a href="https://ebiyik.github.io/">Erdem Bıyık</a>, 
+                  <a href="https://homes.cs.washington.edu/~abhgupta/">Abhishek Gupta</a>*, 
+                  <br>
+                  <em>Under Submission</em>
+                  <br>
+                  <p></p>
+                  <p>
+                    <!-- <a href='files/strap_2025.pdf'>paper &nbsp;&nbsp</a> -->
+                    <a href='TBD'>arxiv &nbsp;&nbsp</a>
+                    <a href='https://peek-robot.github.io/'>website &nbsp;&nbsp</a>
+                    <a href='https://github.com/peek-robot/peek'>code &nbsp;&nbsp</a>
+                  </p>
+                </td>
+              </tr>
+
               <!-- STRAP -->
               <tr onmouseout="strap_stop()" onmouseover="strap_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
