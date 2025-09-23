@@ -26,12 +26,12 @@
 
   <script>
     function gif_start(image, gif) {
-      document.getElementById(image).style.opacity = "1";
-      document.getElementById(gif).style.opacity = "0";
-    }
-    function gif_stop(image, gif) {
       document.getElementById(image).style.opacity = "0";
       document.getElementById(gif).style.opacity = "1";
+    }
+    function gif_stop(image, gif) {
+      document.getElementById(image).style.opacity = "1";
+      document.getElementById(gif).style.opacity = "0";
     }
   </script>
 
@@ -64,7 +64,13 @@
 
                   </p>
                   <p>
-                    In 2024, I interned at <b>Bosch USA</b>, Pittsburgh working with <a href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis</a> and <a href="https://scholar.google.com/citations?user=LYt_2MgAAAAJ&hl=en">Bingqing Chen</a>.
+                    I interned at <b>NVIDIA</b> in the <a href="https://research.nvidia.com/labs/srl/">Seattle Robotics Lab</a> in 2025, working with <a
+                      href="https://imankgoyal.github.io/">Ankit Goyal</a>, <a
+                      href="https://anqili.github.io/">Anqi Li</a>, and
+                      <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a>.
+                      I interned at <b>Bosch USA</b>, Pittsburgh in 2024, working with <a
+                      href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis</a> and <a
+                      href="https://scholar.google.com/citations?user=LYt_2MgAAAAJ&hl=en">Bingqing Chen</a>.
                   </p>
                   <p>In 2022, I graduated with a <b>Master's in Computer Science</b> from <a
                       href="https://www.tu-darmstadt.de/index.en.jsp">TU
@@ -142,39 +148,54 @@
           </table> -->
 
           <!-- News -->
-          <table
+          <!-- <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tr>
               <td style="padding:2.5%;width:100%;vertical-align:middle">
                 <heading>News</heading>
                 <ul>
-                  <li>01/2025: <i>STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning</i> and <i>HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation</i> have been
-                    accepted to <b>ICLR 2025</b></li>
-                  <li>08/2024: URDFormer got covered by <a href="https://www.washington.edu/news/2024/08/07/ai-robots-reinforcement-learning-training-simulation/">UW News</a>
-                  <li>07/2024: Talked about ASID and URDFormer on the <a href="https://www.washington.edu/news/2024/08/07/ai-robots-reinforcement-learning-training-simulation/">TWIML Podcast</a>
-                  <li>07/2024: Starting my internship as a Robot Learning Research Intern at <b>Bosch USA</b>, Pittsburgh working with <a href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis</a> and <a href="https://scholar.google.com/citations?user=LYt_2MgAAAAJ&hl=en">Bingqing Chen</a>
+                  <li>01/2025: <i>STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning</i> and
+                    <i>HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation</i> have been
+                    accepted to <b>ICLR 2025</b>
+                  </li>
+                  <li>08/2024: URDFormer got covered by <a
+                      href="https://www.washington.edu/news/2024/08/07/ai-robots-reinforcement-learning-training-simulation/">UW
+                      News</a>
+                  <li>07/2024: Talked about ASID and URDFormer on the <a
+                      href="https://www.washington.edu/news/2024/08/07/ai-robots-reinforcement-learning-training-simulation/">TWIML
+                      Podcast</a>
+                  <li>07/2024: Starting my internship as a Robot Learning Research Intern at <b>Bosch USA</b>,
+                    Pittsburgh working with <a
+                      href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis</a> and <a
+                      href="https://scholar.google.com/citations?user=LYt_2MgAAAAJ&hl=en">Bingqing Chen</a>
                   <li>05/2024: <i>URDFormer: A Pipeline for Constructing Articulated Simulation Environments from
                       Real-World Images</i> has been accepted to <b>RSS 2024</b></li>
                   <li>05/2024: <i>DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset</i> has been accepted to
-                    <b>RSS 2024</b></li>
-                  <!-- <li>05/2024: Invited to review for CoRL 2024</li>
+                    <b>RSS 2024</b>
+                  </li> -->
+
+                  <!--
+                  <li>05/2024: Invited to review for CoRL 2025</li>
+                  <li>05/2024: Invited to review for CVPR 2025</li>
+                  <li>05/2024: Invited to review for ICLR 2025</li>
+                  <li>05/2024: Invited to review for CoRL 2024</li>
                   <li>03/2024: Invited to review for SemRob @ RSS 2024</li>
                   <li>03/2024: Invited to review for RSS 2024</li>
                   <li>02/2024: Invited to review for CVPR 2024</li> -->
-                  <li>01/2024: TA for CSE478 Fall 2024</li>
+                  <!-- <li>01/2024: TA for CSE478 Fall 2024</li>
                   <li>01/2024: <i>"ASID: Active Exploration for System Identification in Robotic Manipulation"</i> has
                     been accepted to <b>ICLR 2024 (oral, top 1.2%)</b>.</li>
                   <li>05/2023: <i>"Modality-invariant Visual Odometry for Embodied Vision"</i> has been accepted to
                     <b>CVPR 2023</b>.
-                  </li>
+                  </li> -->
                   <!-- <li>06/2022: Our paper <i>"Modality-invariant Visual Odometry for Indoor Navigation"</i> has been accepted to the <b>Embodied AI Workshop</b> at <b>CVPR 2022</b>.</li> -->
-                  <li>03/2022: <i>"Interactive Disentanglement: Learning Concepts by Interacting with their Prototype
+                  <!-- <li>03/2022: <i>"Interactive Disentanglement: Learning Concepts by Interacting with their Prototype
                       Representations"</i> has been accepted to <b>CVPR 2022</b>.</li>
                   <li>01/2022: <i>"Dimensionality Reduction and Prioritized Exploration for Policy Search"</i> has been
                     accepted to <b>AISTATS 2022</b>.</li>
               </td>
             </tr>
-          </table>
+          </table> -->
 
           <!-- Research Projects -->
 
@@ -194,46 +215,40 @@
           </table>
 
           <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"
+            *></a>
             <tbody>
 
-              <!-- STRAP -->
-              <tr onmouseout="peek_stop()" onmouseover="peek_start()">
+              <!-- PEEK -->
+              <tr onmouseout="gif_stop('peek_before', 'peek_after')"
+                onmouseover="gif_start('peek_before', 'peek_after')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <!-- <div class="two" id='strap_image'>
-                      <img src='images/strap_logo.png' width="160" , height="160">
-                    </div> -->
-                    <img src='images/peek_after.gif' width="160">
+                    <div class="two" id='peek_after'>
+                      <img src='images/peek_after.gif' width="160">
+                    </div>
+                    <img src='images/peek_before.png' width="160" id='peek_before'>
                   </div>
-                  <img src='images/peek_before.png' width="160">
-                  <script type="text/javascript">
-                    function peek_start() {
-                      document.getElementById('peek_image').style.opacity = "1";
-                    }
-
-                    function peek_stop() {
-                      document.getElementById('peek_image').style.opacity = "0";
-                    }
-                    peek_stop()
-                  </script>
+                  <script>gif_stop('peek_before', 'peek_after');</script>
                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <a href="https://peek-robot.github.io/">
                     <papertitle>
-                      PEEK: Guiding and Minimal Image Representations for Zero-Shot Generalization of Robot Manipulation Policies
+                      PEEK: Guiding and Minimal Image Representations for Zero-Shot Generalization of Robot Manipulation
+                      Policies
                     </papertitle>
                   </a>
                   <br>
-                  <a href="https://www.jessezhang.net/">Jesse Zhang</a>*, 
-                  <strong><u>Marius Memmel</u></strong>*, 
-                  <a href="https://minjunkevink.github.io/">Kevin Kim</a>, 
-                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>, 
-                  <a href="https://jessethomason.com/">Jesse Thomason</a>, 
-                  <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a>, 
-                  <a href="https://ebiyik.github.io/">Erdem Bıyık</a>, 
-                  <a href="https://homes.cs.washington.edu/~abhgupta/">Abhishek Gupta</a>*, 
+                  <strong><u>Marius Memmel</u></strong>*,
+                  <a href="https://www.jessezhang.net/">Jesse Zhang</a>*,
+                  <a href="https://minjunkevink.github.io/">Kevin Kim</a>,
+                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>,
+                  <a href="https://jessethomason.com/">Jesse Thomason</a>,
+                  <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a>,
+                  <a href="https://ebiyik.github.io/">Erdem Bıyık</a>,
+                  <a href="https://homes.cs.washington.edu/~abhgupta/">Abhishek Gupta</a>&dagger;,
+                  <a href="https://anqili.github.io/">Anqi Li</a>&dagger;
                   <br>
                   <em>Under Submission</em>
                   <br>
@@ -247,26 +262,96 @@
                 </td>
               </tr>
 
-              <!-- STRAP -->
-              <tr onmouseout="strap_stop()" onmouseover="strap_start()">
+              <!-- Maniflow -->
+              <tr onmouseout="gif_stop('maniflow_before', 'maniflow_after')"
+              onmouseover="gif_start('maniflow_before', 'maniflow_after')">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="width:auto; height:auto; max-width:100%;">
+                  <div class="two" id='maniflow_after'>
+                    <img src='images/maniflow_after.gif' width="160">
+                  </div>
+                  <img src='images/maniflow_before.gif' width="160" id='maniflow_before'>
+                </div>
+                <script>gif_stop('maniflow_before', 'maniflow_after');</script>
+              </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://maniflow-policy.github.io/">
+                    <papertitle>
+                      ManiFlow: A General Robot Manipulation Policy via Consistency Flow Training
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://geyan21.github.io/">Ge Yan</a>,
+                  <a href="https://jiyuezh.github.io/">Jiyue Zhu</a>*,
+                  <a href="https://www.linkedin.com/in/yuquand/">Yuquan Deng</a>*,
+                  <a href="https://aaronyang1223.github.io/">Shiqi Yang</a>,
+                  <a href="https://rogerqi.github.io/">Ri-Zhao Qiu</a>,
+                  <a href="https://chengxuxin.github.io/">Xuxin Cheng</a>,
+                  <strong>Marius Memmel</strong>,
+                  <a href="https://ranjaykrishna.com/index.html">Ranjay Krishna</a>&dagger;,
+                  <a href="https://imankgoyal.github.io/">Ankit Goyal</a>&dagger;,
+                  <a href="https://xiaolonw.github.io/">Xiaolong Wang</a>&dagger;,
+                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>&dagger;
+
+
+                  <br>
+                  <em>Conference on Robot Learning (CoRL)</em>, 2025
+                  <br>
+                  <p></p>
+                  <p>
+                    <a href='https://arxiv.org/abs/2509.01819'>arxiv &nbsp;&nbsp</a>
+                    <a href='https://maniflow-policy.github.io/'>website &nbsp;&nbsp</a>
+                    <a href='https://github.com/geyan21/ManiFlow_Policy'>code &nbsp;&nbsp</a>
+                  </p>
+                </td>
+              </tr>
+
+              <!-- SelfReVision -->
+              <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <!-- <div class="two" id='strap_image'>
-                      <img src='images/strap_logo.png' width="160" , height="160">
-                    </div> -->
-                    <img src='images/strap_logo.png' width="160">
+                    <img src='images/selfrevision_before.png' width="120">
                   </div>
-                  <script type="text/javascript">
-                    function strap_start() {
-                      document.getElementById('strap_image').style.opacity = "1";
-                    }
-
-                    function strap_stop() {
-                      document.getElementById('strap_image').style.opacity = "0";
-                    }
-                    strap_stop()
-                  </script>
                 </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2507.08224">
+                    <papertitle>
+                      Making VLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://chan0park.github.io/">Chan Young Park</a>*,
+                  <a href="https://jfisher52.github.io/">Jillian Fisher</a>*,
+                  <strong>Marius Memmel</strong>,
+                  <a href="https://scholar.google.com/citations?user=FdZa3aAAAAAJ&hl=en">Dipika Khullar</a>,
+                  <a href="">Seoho Yun</a>,
+                  <a href="https://abhishekunique.github.io/">Abhishek Gupta</a>,
+                  <a href="https://yejinc.github.io/">Yejin Choi</a>
+                  <br>
+                  <em>Empirical Methods in Natural Language Processing (EMNLP)</em>, 2025
+                  <br>
+                  <p></p>
+                  <p>
+                    <a href='https://arxiv.org/abs/2507.08224'>arxiv &nbsp;&nbsp</a>
+                    <a href='https://github.com/chan0park/SelfReVision'>code &nbsp;&nbsp</a>
+                  </p>
+                </td>
+              </tr>
+
+               <!-- STRAP -->
+               <tr onmouseout="gif_stop('strap_before', 'strap_after')"
+                 onmouseover="gif_start('strap_before', 'strap_after')">
+                 <td style="padding:20px;width:25%;vertical-align:middle">
+                   <div class="one" style="width:auto; height:auto; max-width:100%;">
+                     <div class="two" id='strap_after'>
+                       <img src='images/strap_after.gif' width="160">
+                     </div>
+                     <img src='images/strap_before.png' width="160" id='strap_before'>
+                   </div>
+                   <script>gif_stop('strap_before', 'strap_after');</script>
+                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <a href="https://memmelma.github.io/">
@@ -276,10 +361,10 @@
                   </a>
                   <br>
                   <strong>Marius Memmel*</strong>,
-                  <a href="https://www.linkedin.com/in/jacob-b-066234203/">Jacob Berg*</a>,
+                  <a href="https://www.linkedin.com/in/jacob-b-066234203/">Jacob Berg</a>*,
                   <a href="https://scholar.google.com/citations?user=LYt_2MgAAAAJ&hl=en">Bingqing Chen</a>,
-                  <a href="https://abhishekunique.github.io/">Abhishek Gupta&dagger;</a>,
-                  <a href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis&dagger;</a>
+                  <a href="https://abhishekunique.github.io/">Abhishek Gupta</a>&dagger;,
+                  <a href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis</a>&dagger;
                   <br>
                   <em>Conference on Learning Representations (ICLR)</em>, 2025
                   <br>
@@ -292,78 +377,108 @@
                   </p>
                 </td>
               </tr>
-              
-                            <!-- HAMSTER -->
-                            <tr onmouseout="hamster_stop()" onmouseover="hamster_start()">
-                              <td style="padding:20px;width:25%;vertical-align:middle">
-                                <div class="one" style="width:auto; height:auto; max-width:100%;">
-                                  <div class="two" id='hamster_image'>
-                                    <img src='images/hamster_after.gif' width="160">
-                                  </div>
-                                  <img src='images/hamster_before.png' width="160">
-                                </div>
-                                <script type="text/javascript">
-                                  function hamster_start() {
-                                    document.getElementById('hamster_image').style.opacity = "1";
-                                  }
-              
-                                  function hamster_stop() {
-                                    document.getElementById('hamster_image').style.opacity = "0";
-                                  }
-                                  hamster_stop()
-                                </script>
-                              </td>
-              
-                              <td style="padding:20px;width:75%;vertical-align:middle">
-                                <a href="https://openreview.net/pdf?id=I9fQcOrHv9">
-                                  <papertitle>
-                                    HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation
-                                  </papertitle>
-                                </a>
-                                <br>
-                                <a href="https://yili.vision/">Yi Li*</a>,
-                                <a href="https://www.linkedin.com/in/yuquand/">Yuquan Deng*</a>,
-                                <a href="https://www.jessezhang.net/">Jesse Zhang*</a>,
-                                <a href="https://joeljang.github.io/">Joel Jang</a>,
-                                <strong>Marius Memmel</strong>,
-                                <a href="https://research.nvidia.com/person/caelan-garrett">Caelan Garrett</a>,
-                                <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a>,
-                                <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>,
-                                <a href="https://research.nvidia.com/person/anqi-li">Anqi Li</a>,
-                                <a href="https://abhishekunique.github.io/">Abhishek Gupta</a>,
-                                <a href="https://imankgoyal.github.io/">Ankit Goyal</a>
-                                <br>
-                                <em>Conference on Learning Representations (ICLR)</em>, 2025
-                                <br>
-                                <p></p>
-                                <p>
-                                  <a href='https://hamster-robot.github.io/paper.pdf'>paper &nbsp;&nbsp</a>
-                                  <a href='https://arxiv.org/abs/2502.05485'>arxiv &nbsp;&nbsp</a>
-                                  <a href='https://hamster-robot.github.io/'>website &nbsp;&nbsp</a>
-                                  <!-- <a href='https://github.com/WEIRDLabUW/urdformer'>code &nbsp;&nbsp</a> -->
-                                </p>
-                              </td>
-                            </tr>
 
-              <!-- URDFORMER -->
-              <tr onmouseout="urdf_stop()" onmouseover="urdf_start()">
+              <!-- HAMSTER -->
+              <tr onmouseout="gif_stop('hamster_before', 'hamster_after')"
+                onmouseover="gif_start('hamster_before', 'hamster_after')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='urdf_image'>
+                    <div class="two" id='hamster_after'>
+                      <img src='images/hamster_after.gif' width="160">
+                    </div>
+                    <img src='images/hamster_before.png' width="160" id='hamster_before'>
+                  </div>
+                  <script>gif_stop('hamster_before', 'hamster_after');</script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://openreview.net/pdf?id=I9fQcOrHv9">
+                    <papertitle>
+                      HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://yili.vision/">Yi Li</a>*,
+                  <a href="https://www.linkedin.com/in/yuquand/">Yuquan Deng</a>*,
+                  <a href="https://www.jessezhang.net/">Jesse Zhang</a>*,
+                  <a href="https://joeljang.github.io/">Joel Jang</a>,
+                  <strong>Marius Memmel</strong>,
+                  <a href="https://research.nvidia.com/person/caelan-garrett">Caelan Garrett</a>,
+                  <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a>,
+                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>,
+                  <a href="https://research.nvidia.com/person/anqi-li">Anqi Li</a>,
+                  <a href="https://abhishekunique.github.io/">Abhishek Gupta</a>,
+                  <a href="https://imankgoyal.github.io/">Ankit Goyal</a>
+                  <br>
+                  <em>Conference on Learning Representations (ICLR)</em>, 2025
+                  <br>
+                  <p></p>
+                  <p>
+                    <a href='https://hamster-robot.github.io/paper.pdf'>paper &nbsp;&nbsp</a>
+                    <a href='https://arxiv.org/abs/2502.05485'>arxiv &nbsp;&nbsp</a>
+                    <a href='https://hamster-robot.github.io/'>website &nbsp;&nbsp</a>
+                    <!-- <a href='https://github.com/WEIRDLabUW/urdformer'>code &nbsp;&nbsp</a> -->
+                  </p>
+                </td>
+              </tr>
+
+              <!-- DRAWER -->
+              <tr onmouseout="gif_stop('drawer_before', 'drawer_after')"
+              onmouseover="gif_start('drawer_before', 'drawer_after')">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="width:auto; height:auto; max-width:100%;">
+                  <div class="two" id='drawer_after'>
+                    <img src='images/drawer_after.gif' width="160">
+                  </div>
+                  <img src='images/drawer_before.gif' width="160" id='drawer_before'>
+                </div>
+                <script>gif_stop('drawer_before', 'drawer_after');</script>
+              </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a
+                    href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xia_DRAWER_Digital_Reconstruction_and_Articulation_With_Environment_Realism_CVPR_2025_paper.pdf">
+                    <papertitle>
+                      DRAWER: Digital Reconstruction and Articulation With Environment Realism
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://xiahongchi.github.io/">Hongchi Xia</a>,
+                  <a href="https://entongsu.github.io/">Entong Su</a>,
+                  <strong>Marius Memmel</strong>,
+                  <a href="https://arhanjain.github.io/">Arhan Jain</a>,
+                  <a href="https://raymondyu5.github.io/">Raymond Yu</a>,
+                  <a href="https://www.linkedin.com/in/numfor-mbiziwo-tiapo/">Numfor Mbiziwo-Tiapo</a>,
+                  <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>,
+                  <a href="https://abhishekunique.github.io/">Abhishek Gupta</a>,
+                  <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a>,
+                  <a href="https://www.cs.cornell.edu/~weichiu/">Wei-Chiu Ma</a>
+                  <br>
+                  <em>Computer Vision and Pattern Recognition Conference (CVPR)</em>, 2025
+                  <br>
+                  <p></p>
+                  <p>
+                    <a
+                      href='https://openaccess.thecvf.com/content/CVPR2025/papers/Xia_DRAWER_Digital_Reconstruction_and_Articulation_With_Environment_Realism_CVPR_2025_paper.pdf'>paper
+                      &nbsp;&nbsp</a>
+                    <a href='https://arxiv.org/abs/2504.15278'>arxiv &nbsp;&nbsp</a>
+                    <a href='https://xiahongchi.github.io/DRAWER/'>website &nbsp;&nbsp</a>
+                    <a href='https://github.com/xiahongchi/DRAWER'>code &nbsp;&nbsp</a>
+                  </p>
+                </td>
+              </tr>
+
+              <!-- URDFORMER -->
+              <tr onmouseout="gif_stop('urdformer_before', 'urdformer_after')"
+                onmouseover="gif_start('urdformer_before', 'urdformer_after')">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="width:auto; height:auto; max-width:100%;">
+                    <div class="two" id='urdformer_after'>
                       <img src='images/rss_urdformer.gif' width="160">
                     </div>
-                    <img src='images/urdformer_before.png' width="160">
+                    <img src='images/urdformer_before.png' width="160" id='urdformer_before'>
                   </div>
-                  <script type="text/javascript">
-                    function urdf_start() {
-                      document.getElementById('urdf_image').style.opacity = "1";
-                    }
-
-                    function urdf_stop() {
-                      document.getElementById('urdf_image').style.opacity = "0";
-                    }
-                    urdf_stop()
-                  </script>
+                  <script>gif_stop('urdformer_before', 'urdformer_after');</script>
                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -378,10 +493,13 @@
                   <strong>Marius Memmel</strong>,
                   <a href="https://kaichun-mo.github.io/">Kaichun Mo</a>,
                   <a href="https://scholar.google.com/citations?user=kD9uKC4AAAAJ&hl=en">Alex Fang</a>,
-                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox*</a>,
-                  <a href="https://abhishekunique.github.io/">Abhishek Gupta*</a>
+                  <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>*,
+                  <a href="https://abhishekunique.github.io/">Abhishek Gupta</a>*
                   <br>
                   <em>Robotics: Science and Systems (RSS)</em>, 2024
+                  <br>
+                  <em> <span style="color:red">Oral
+                      Presentation at CoRL TGR workshop </span></em>
                   <br>
                   <p></p>
                   <p>
@@ -395,24 +513,16 @@
 
 
               <!-- DROID -->
-              <tr onmouseout="droid_stop()" onmouseover="droid_start()">
+              <tr onmouseout="gif_stop('droid_before', 'droid_after')"
+                onmouseover="gif_start('droid_before', 'droid_after')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='droid_image'>
+                    <div class="two" id='droid_after'>
                       <img src='images/droid_after.gif' width="160" , height="160">
                     </div>
-                    <img src='images/droid_before.png' width="160">
+                    <img src='images/droid_before.png' width="160" id='droid_before'>
                   </div>
-                  <script type="text/javascript">
-                    function droid_start() {
-                      document.getElementById('droid_image').style.opacity = "1";
-                    }
-
-                    function droid_stop() {
-                      document.getElementById('droid_image').style.opacity = "0";
-                    }
-                    droid_stop()
-                  </script>
+                  <script>gif_stop('droid_before', 'droid_after');</script>
                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -420,8 +530,8 @@
                     <papertitle>DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset</papertitle>
                   </a>
                   <br>
-                  <a href="https://www.linkedin.com/in/alexander-khazatsky-b98841149">Alexander Khazatsky*</a>,
-                  <a href="https://kpertsch.github.io/">Karl Pertsch*</a>,
+                  <a href="https://www.linkedin.com/in/alexander-khazatsky-b98841149">Alexander Khazatsky</a>*,
+                  <a href="https://kpertsch.github.io/">Karl Pertsch</a>*,
                   <a href="https://suraj-nair-1.github.io/">Suraj Nair</a>,
                   ...,
                   <strong>Marius Memmel</strong>,
@@ -430,7 +540,8 @@
                   <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
                   <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
                   <br>
-                  <em>WEIRD Lab lead together with <a href="https://scholar.google.com/citations?user=C5kHIRoAAAAJ&hl=en">Arhan Jain</a></em>
+                  <em>WEIRD Lab lead together with <a
+                      href="https://scholar.google.com/citations?user=C5kHIRoAAAAJ&hl=en">Arhan Jain</a></em>
                   <br>
                   <em>Robotics: Science and Systems (RSS)</em>, 2024
                   <br>
@@ -443,24 +554,16 @@
               </tr>
 
               <!-- ASID -->
-              <tr onmouseout="asid_stop()" onmouseover="asid_start()">
+              <tr onmouseout="gif_stop('asid_before', 'asid_after')"
+                onmouseover="gif_start('asid_before', 'asid_after')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='asid_image'>
+                    <div class="two" id='asid_after'>
                       <img src='images/asid_after.gif' width="160" , height="160">
                     </div>
-                    <img src='images/asid_before.jpg' width="160">
+                    <img src='images/asid_before.jpg' width="160" id='asid_before'>
                   </div>
-                  <script type="text/javascript">
-                    function asid_start() {
-                      document.getElementById('asid_image').style.opacity = "1";
-                    }
-
-                    function asid_stop() {
-                      document.getElementById('asid_image').style.opacity = "0";
-                    }
-                    asid_stop()
-                  </script>
+                  <script>gif_stop('asid_before', 'asid_after');</script>
                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -475,8 +578,10 @@
                   <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>,
                   <a href="https://abhishekunique.github.io/">Abhishek Gupta</a>
                   <br>
-                  <em>Conference on Learning Representations (ICLR)</em>, 2024 <span style="color:red">(Oral
-                    Presentation, top 1.2%)</span>
+                  <em>Conference on Learning Representations (ICLR)</em>, 2024
+                  <br>
+                  <span style="color:red">Oral
+                    Presentation, top 1.2%</span>
                   <br>
                   <p></p>
                   <p>
@@ -489,24 +594,15 @@
               </tr>
 
               <!-- VOT -->
-              <tr onmouseout="embodied_nav_stop()" onmouseover="embodied_nav_start()">
+              <tr onmouseout="gif_stop('vot_before', 'vot_after')" onmouseover="gif_start('vot_before', 'vot_after')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='embodied_nav_image'>
+                    <div class="two" id='vot_after'>
                       <img src='images/embodied_nav.gif' width="160" , height="160">
                     </div>
-                    <img src='images/vot.jpg' width="160">
+                    <img src='images/vot.jpg' width="160" id='vot_before'>
                   </div>
-                  <script type="text/javascript">
-                    function embodied_nav_start() {
-                      document.getElementById('embodied_nav_image').style.opacity = "1";
-                    }
-
-                    function embodied_nav_stop() {
-                      document.getElementById('embodied_nav_image').style.opacity = "0";
-                    }
-                    embodied_nav_stop()
-                  </script>
+                  <script>gif_stop('vot_before', 'vot_after');</script>
                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -535,24 +631,16 @@
                 </td>
               </tr>
 
-              <tr onmouseout="interdis_stop()" onmouseover="interdis_start()">
+              <tr onmouseout="gif_stop('interdis_before', 'interdis_after')"
+                onmouseover="gif_start('interdis_before', 'interdis_after')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='interdis_image'>
+                    <div class="two" id='interdis_after'>
                       <img src='images/inter_dis_2.jpg' width="160">
                     </div>
-                    <img src='images/inter_dis_1.jpg' width="160">
+                    <img src='images/inter_dis_1.jpg' width="160" id='interdis_before'>
                   </div>
-                  <script type="text/javascript">
-                    function interdis_start() {
-                      document.getElementById('interdis_image').style.opacity = "1";
-                    }
-
-                    function interdis_stop() {
-                      document.getElementById('interdis_image').style.opacity = "0";
-                    }
-                    interdis_stop()
-                  </script>
+                  <script>gif_stop('interdis_before', 'interdis_after');</script>
                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -581,24 +669,16 @@
                 </td>
               </tr>
 
-              <tr onmouseout="ball_stop()" onmouseover="ball_start()">
+              <tr onmouseout="gif_stop('ball_before', 'ball_after')"
+                onmouseover="gif_start('ball_before', 'ball_after')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='ball_image'>
+                    <div class="two" id='ball_after'>
                       <img src='images/ball_rolling_after.gif' width="160">
                     </div>
-                    <img src='images/ball_rolling_before.gif' width="160">
+                    <img src='images/ball_rolling_before.gif' width="160" id='ball_before'>
                   </div>
-                  <script type="text/javascript">
-                    function ball_start() {
-                      document.getElementById('ball_image').style.opacity = "1";
-                    }
-
-                    function ball_stop() {
-                      document.getElementById('ball_image').style.opacity = "0";
-                    }
-                    ball_stop()
-                  </script>
+                  <script>gif_stop('ball_before', 'ball_after');</script>
                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -623,24 +703,15 @@
                 </td>
               </tr>
 
-              <tr onmouseout="acs_stop()" onmouseover="acs_start()">
+              <tr onmouseout="gif_stop('acs_before', 'acs_after')" onmouseover="gif_start('acs_before', 'acs_after')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one" style="width:auto; height:auto; max-width:100%;">
-                    <div class="two" id='acs_image'>
-                      <img src='images/acs_before.jpg' width="160">
+                    <div class="two" id='acs_after'>
+                      <img src='images/acs_after.jpg' width="160">
                     </div>
-                    <img src='images/acs_after.jpg' width="160">
+                    <img src='images/acs_before.jpg' width="160" id='acs_before'>
                   </div>
-                  <script type="text/javascript">
-                    function acs_start() {
-                      document.getElementById('acs_image').style.opacity = "1";
-                    }
-
-                    function acs_stop() {
-                      document.getElementById('acs_image').style.opacity = "0";
-                    }
-                    acs_stop()
-                  </script>
+                  <script>gif_stop('acs_before', 'acs_after');</script>
                 </td>
 
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -666,7 +737,7 @@
             </tbody>
           </table>
 
-     
+
           <!-- Awards -->
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
