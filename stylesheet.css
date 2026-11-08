@@ -134,9 +134,11 @@ footer a { font-size: small; }
 .pub-links a { margin-right: 14px; }
 .note { color: red; font-style: italic; }
 
-.thumb { position: relative; width: 160px; height: 160px; display: flex; align-items: center; }
-.thumb-before, .thumb-after { transition: opacity .2s ease-in-out; }
-.thumb-after { position: absolute; inset: 0; display: flex; align-items: center; opacity: 0; }
+/* All teasers share one 4:3 box; images are cropped to fill it. */
+.thumb { position: relative; width: 160px; height: 120px; overflow: hidden; border-radius: 4px; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity .2s ease-in-out; }
+.thumb img.fit-contain { object-fit: contain; }
+.thumb-after { position: absolute; inset: 0; opacity: 0; }
 .pub-hover:hover .thumb-before { opacity: 0; }
 .pub-hover:hover .thumb-after { opacity: 1; }
 

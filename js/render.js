@@ -15,11 +15,9 @@ function renderAuthor(token) {
   return link(PEOPLE[name], name) + suffix;
 }
 
-function renderThumb({ before, after, width = 160 }) {
-  const afterImg = after
-    ? `<div class="thumb-after"><img src="${after}" width="160" alt=""></div>`
-    : "";
-  return `<div class="thumb">${afterImg}<img class="thumb-before" src="${before}" width="${width}" alt=""></div>`;
+function renderThumb({ before, after, fit = "cover" }) {
+  const afterImg = after ? `<img class="thumb-after" src="${after}" alt="">` : "";
+  return `<div class="thumb">${afterImg}<img class="thumb-before fit-${fit}" src="${before}" alt=""></div>`;
 }
 
 function renderPublication(p) {

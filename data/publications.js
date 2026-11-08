@@ -7,7 +7,7 @@
 //   notes     optional array of HTML lines, rendered in red (e.g. oral presentations)
 //   extra     optional HTML line (italic) under the authors
 //   links     [label, url] pairs
-//   thumb     { before, after?, width? } -- "after" (gif) fades in on hover
+//   thumb     { before, after?, fit? }  (fit: "cover" default, or "contain" for logos/diagrams) -- "after" (gif) fades in on hover
 const PUBLICATIONS = [
   {
     id: "dna",
@@ -41,7 +41,7 @@ const PUBLICATIONS = [
       ["website", "https://peek-robot.github.io/"],
       ["code", "https://github.com/peek-robot/peek"],
     ],
-    thumb: { before: "images/peek_before.png", after: "images/peek_after.gif" },
+    thumb: { before: "images/peek_before.png", fit: "contain", after: "images/peek_after.gif" },
   },
   {
     id: "maniflow",
@@ -72,7 +72,7 @@ const PUBLICATIONS = [
       ["arxiv", "https://arxiv.org/abs/2507.08224"],
       ["code", "https://github.com/chan0park/SelfReVision"],
     ],
-    thumb: { before: "images/selfrevision_before.png", width: 120 },
+    thumb: { before: "images/selfrevision_before.png", fit: "contain" },
   },
   {
     id: "strap",
@@ -86,7 +86,7 @@ const PUBLICATIONS = [
       ["website", "https://weirdlabuw.github.io/strap/"],
       ["code", "https://github.com/WEIRDLabUW/STRAP"],
     ],
-    thumb: { before: "images/strap_before.png", after: "images/strap_after.gif" },
+    thumb: { before: "images/strap_before.png", fit: "contain", after: "images/strap_after.gif" },
   },
   {
     id: "hamster",
@@ -136,7 +136,7 @@ const PUBLICATIONS = [
       ["website", "https://urdformer.github.io/"],
       ["code", "https://github.com/WEIRDLabUW/urdformer"],
     ],
-    thumb: { before: "images/urdformer_before.png", after: "images/rss_urdformer.gif" },
+    thumb: { before: "images/urdformer_before.png", fit: "contain", after: "images/rss_urdformer.gif" },
   },
   {
     id: "droid",
@@ -152,7 +152,7 @@ const PUBLICATIONS = [
       ["arxiv", "https://arxiv.org/abs/2403.12945"],
       ["website", "https://droid-dataset.github.io/"],
     ],
-    thumb: { before: "images/droid_before.png", after: "images/droid_after.gif" },
+    thumb: { before: "images/droid_before.png", fit: "contain", after: "images/droid_after.gif" },
   },
   {
     id: "asid",
@@ -169,7 +169,7 @@ const PUBLICATIONS = [
       ["website", "https://weirdlabuw.github.io/asid/"],
       ["code", "https://github.com/WEIRDLabUW/asid"],
     ],
-    thumb: { before: "images/asid_before.jpg", after: "images/asid_after.gif" },
+    thumb: { before: "images/asid_before.jpg", fit: "contain", after: "images/asid_after.gif" },
   },
   {
     id: "vot",
@@ -184,7 +184,7 @@ const PUBLICATIONS = [
       ["poster", "files/poster_cvpr_2023.pdf"],
       ["code", "https://github.com/memmelma/VO-Transformer/"],
     ],
-    thumb: { before: "images/vot.jpg", after: "images/embodied_nav.gif" },
+    thumb: { before: "images/vot.jpg", fit: "contain", after: "images/embodied_nav.gif" },
   },
   {
     id: "interdis",
