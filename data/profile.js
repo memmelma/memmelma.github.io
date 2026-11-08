@@ -52,7 +52,6 @@ const PROFILE = {
     ["CV", "files/cv_memmel_marius.pdf"],
     ["Google Scholar", "https://scholar.google.com/citations?user=FoIK-M0AAAAJ&hl=en&oi=sra"],
     ["Twitter", "https://twitter.com/memmelma"],
-    ["Bluesky", "https://bsky.app/profile/memmelma.bsky.social"],
     ["Github", "https://github.com/memmelma"],
     ["LinkedIn", "https://www.linkedin.com/in/marius-memmel-333138153/"],
   ],
