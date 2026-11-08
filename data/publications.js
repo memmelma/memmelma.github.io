@@ -17,7 +17,7 @@ const PUBLICATIONS = [
       "Marius Memmel", "Shawn Yin*", "Urvi Rutia*", "Angad Wadhwa*", "Eldon Li", "Gavin Angeloff",
       "Ankit Goyal", "Jesse Zhang", "Dieter Fox", "Fabio Ramos", "Anqi Li†", "Abhishek Gupta†",
     ],
-    venue: ["Workshop on Continually Self-Improving Robots at CoRL, 2026"],
+    venue: ["Under Submission", "Workshop on Continually Self-Improving Robots at CoRL, 2026"],
     notes: ["Oral Presentation at the Sample-Efficient Real-World RL workshop"],
     links: [
       ["paper", "https://weirdlabuw.github.io/static/papers/dna.pdf"],
@@ -35,7 +35,7 @@ const PUBLICATIONS = [
       "Jesse Zhang*", "Marius Memmel*", "Kevin Kim", "Dieter Fox", "Jesse Thomason",
       "Fabio Ramos", "Erdem Bıyık", "Abhishek Gupta†", "Anqi Li†",
     ],
-    venue: ["Under Submission"],
+    venue: ["IEEE International Conference on Robotics and Automation (ICRA), 2026"],
     links: [
       ["arxiv", "https://arxiv.org/abs/2509.18282"],
       ["website", "https://peek-robot.github.io/"],
